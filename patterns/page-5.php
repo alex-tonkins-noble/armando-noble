@@ -1,11 +1,11 @@
 <?php
 /**
  * Title: Page layout five: Large quotes.
- * Slug: armando/page-layout-five
+ * Slug: armando-noble/page-layout-five
  * Categories: layout, columns
  * Block Types: core/columns, core/media-text
  *
- * @package armando
+ * @package armando-noble
  * @since 2.0.0
  */
 
@@ -25,13 +25,13 @@
 	<div class="wp-block-column">
 		<!-- wp:post-title /-->
 		<!-- wp:paragraph {"fontSize":"small"} -->
-		<p class="has-small-font-size"><?php echo esc_html_x( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et quam vel mi sodales euismod nec quis odio.', 'sample content', 'armando' ); ?></p>
+		<p class="has-small-font-size"><?php echo esc_html_x( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et quam vel mi sodales euismod nec quis odio.', 'sample content', 'armando-noble' ); ?></p>
 		<!-- /wp:paragraph -->
 		<!-- wp:paragraph {"fontSize":"small"} -->
-		<p class="has-small-font-size"><?php echo esc_html_x( 'Mauris gravida purus in sapien consequat, eget mollis dui finibus. Integer neque neque, luctus eu dignissim et, pharetra ac lorem.', 'sample content', 'armando' ); ?></p>
+		<p class="has-small-font-size"><?php echo esc_html_x( 'Mauris gravida purus in sapien consequat, eget mollis dui finibus. Integer neque neque, luctus eu dignissim et, pharetra ac lorem.', 'sample content', 'armando-noble' ); ?></p>
 		<!-- /wp:paragraph -->
 		<!-- wp:paragraph {"fontSize":"small"} -->
-		<p class="has-small-font-size"><?php echo esc_html_x( 'Sed consequat, quam vel vulputate bibendum, sem ipsum feugiat purus, at porta elit lectus non eros. Aenean at lobortis sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.', 'sample content', 'armando' ); ?></p>
+		<p class="has-small-font-size"><?php echo esc_html_x( 'Sed consequat, quam vel vulputate bibendum, sem ipsum feugiat purus, at porta elit lectus non eros. Aenean at lobortis sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.', 'sample content', 'armando-noble' ); ?></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:column -->
@@ -60,16 +60,16 @@
 	<!-- wp:column -->
 	<div class="wp-block-column">
 		<!-- wp:paragraph {"fontSize":"small"} -->
-		<p class="has-small-font-size"><?php echo esc_html_x( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et quam vel mi sodales euismod nec quis odio.', 'sample content', 'armando' ); ?></p>
+		<p class="has-small-font-size"><?php echo esc_html_x( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et quam vel mi sodales euismod nec quis odio.', 'sample content', 'armando-noble' ); ?></p>
 		<!-- /wp:paragraph -->
 		<!-- wp:paragraph {"fontSize":"small"} -->
-		<p class="has-small-font-size"><?php echo esc_html_x( 'Mauris gravida purus in sapien consequat, eget mollis dui finibus. Integer neque neque, luctus eu dignissim et, pharetra ac lorem.', 'sample content', 'armando' ); ?></p>
+		<p class="has-small-font-size"><?php echo esc_html_x( 'Mauris gravida purus in sapien consequat, eget mollis dui finibus. Integer neque neque, luctus eu dignissim et, pharetra ac lorem.', 'sample content', 'armando-noble' ); ?></p>
 		<!-- /wp:paragraph -->
 		<!-- wp:paragraph {"fontSize":"small"} -->
-		<p class="has-small-font-size"><?php echo esc_html_x( 'Sed consequat, quam vel vulputate bibendum, sem ipsum feugiat purus, at porta elit lectus non eros. Aenean at lobortis sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.', 'sample content', 'armando' ); ?></p>
+		<p class="has-small-font-size"><?php echo esc_html_x( 'Sed consequat, quam vel vulputate bibendum, sem ipsum feugiat purus, at porta elit lectus non eros. Aenean at lobortis sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.', 'sample content', 'armando-noble' ); ?></p>
 		<!-- /wp:paragraph -->
 		<!-- wp:paragraph {"fontSize":"small"} -->
-		<p class="has-small-font-size"><?php echo esc_html_x( 'Aenean at lobortis sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.', 'sample content', 'armando' ); ?></p>
+		<p class="has-small-font-size"><?php echo esc_html_x( 'Aenean at lobortis sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.', 'sample content', 'armando-noble' ); ?></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:column -->

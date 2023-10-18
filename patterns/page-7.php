@@ -1,12 +1,12 @@
 <?php
 /**
  * Title: Page layout seven: Post with cover block background
- * Slug: armando/page-layout-seven
+ * Slug: armando-noble/page-layout-seven
  * Categories: layout, columns
  * Block Types: core/columns, core/cover
  * Viewport Width: 840
  *
- * @package armando
+ * @package armando-noble
  * @since 2.0.0
  */
 
@@ -18,31 +18,31 @@
 		<!-- wp:group {"backgroundColor":"white","textColor":"black"} -->
 		<div class="wp-block-group has-black-color has-white-background-color has-text-color has-background">
 			<!-- wp:paragraph {"fontSize":"large"} -->
-			<p class="has-large-font-size"><strong><?php echo esc_html_x( 'Sample content. Replace the example cover block with your own image.', 'sample content', 'armando' ); ?></strong></p>
+			<p class="has-large-font-size"><strong><?php echo esc_html_x( 'Sample content. Replace the example cover block with your own image.', 'sample content', 'armando-noble' ); ?></strong></p>
 			<!-- /wp:paragraph -->
 			<!-- wp:post-author {"showAvatar":false,"byline":"Written by"} /-->
 			<!-- wp:separator {"className":"is-style-wide"} -->
 			<hr class="wp-block-separator is-style-wide"/>
 			<!-- /wp:separator -->
 			<!-- wp:paragraph -->
-			<p><?php echo esc_html_x( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et quam vel mi sodales euismod nec quis odio.', 'sample content', 'armando' ); ?></p>
+			<p><?php echo esc_html_x( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et quam vel mi sodales euismod nec quis odio.', 'sample content', 'armando-noble' ); ?></p>
 			<!-- /wp:paragraph -->
 			<!-- wp:columns -->
 			<div class="wp-block-columns">
 				<!-- wp:column -->
 				<div class="wp-block-column">
-					<!-- wp:paragraph --><p><?php echo esc_html_x( 'Sample content. Replace the text with your own content.', 'sample content', 'armando' ); ?></p><!-- /wp:paragraph -->
-					<!-- wp:paragraph --><p><?php echo esc_html_x( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et quam vel mi sodales euismod nec quis odio.', 'sample content', 'armando' ); ?></p>
+					<!-- wp:paragraph --><p><?php echo esc_html_x( 'Sample content. Replace the text with your own content.', 'sample content', 'armando-noble' ); ?></p><!-- /wp:paragraph -->
+					<!-- wp:paragraph --><p><?php echo esc_html_x( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et quam vel mi sodales euismod nec quis odio.', 'sample content', 'armando-noble' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:column -->
 				<!-- wp:column -->
 				<div class="wp-block-column">
 					<!-- wp:paragraph -->
-					<p><?php echo esc_html_x( 'Sample content. Replace the text with your own content.', 'sample content', 'armando' ); ?></p>
+					<p><?php echo esc_html_x( 'Sample content. Replace the text with your own content.', 'sample content', 'armando-noble' ); ?></p>
 					<!-- /wp:paragraph -->
 					<!-- wp:paragraph -->
-					<p><?php echo esc_html_x( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et quam vel mi sodales euismod nec quis odio.', 'sample content', 'armando' ); ?></p>
+					<p><?php echo esc_html_x( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et quam vel mi sodales euismod nec quis odio.', 'sample content', 'armando-noble' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:column -->

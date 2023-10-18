@@ -1,11 +1,11 @@
 <?php
 /**
  * Title: Centered header with site title below the navigation
- * Slug: armando/header-two
+ * Slug: armando-noble/header-two
  * Categories: header
  * Block Types: core/columns, core/site-title
  *
- * @package armando
+ * @package armando-noble
  * @since 2.0.0
  */
 

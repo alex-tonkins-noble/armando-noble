@@ -1,11 +1,11 @@
 <?php
 /**
  * Title: Player profile
- * Slug: armando/player-profile
+ * Slug: armando-noble/player-profile
  * Categories: sport
  * Block Types: core/columns
  *
- * @package armando
+ * @package armando-noble
  * @since 2.0.0
  */
 
@@ -16,15 +16,15 @@
 	<!-- wp:column -->
 	<div class="wp-block-column">
 		<!-- wp:paragraph {"fontSize":"large"} -->
-		<p class="has-large-font-size"><strong><?php echo esc_html_x( 'First name', 'sample content', 'armando' ); ?></strong></p>
+		<p class="has-large-font-size"><strong><?php echo esc_html_x( 'First name', 'sample content', 'armando-noble' ); ?></strong></p>
 		<!-- /wp:paragraph -->
-		<!-- wp:heading {"className":"is-style-armando-top-bottom-border","fontSize":"x-large"} -->
-		<h2 class="is-style-armando-top-bottom-border has-x-large-font-size"><strong><?php echo esc_html_x( 'Last name', 'sample content', 'armando' ); ?></strong></h2><!-- /wp:heading -->
+		<!-- wp:heading {"className":"is-style-armando-noble-top-bottom-border","fontSize":"x-large"} -->
+		<h2 class="is-style-armando-noble-top-bottom-border has-x-large-font-size"><strong><?php echo esc_html_x( 'Last name', 'sample content', 'armando-noble' ); ?></strong></h2><!-- /wp:heading -->
 		<!-- wp:spacer {"height":"40px"} -->
 		<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
 		<!-- wp:paragraph -->
-		<p><strong><?php echo esc_html_x( 'Position', 'sample content', 'armando' ); ?></strong></p>
+		<p><strong><?php echo esc_html_x( 'Position', 'sample content', 'armando-noble' ); ?></strong></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:column -->
@@ -32,7 +32,7 @@
 	<div class="wp-block-column">
 		<!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder.png' ) ); ?>","dimRatio":50,"contentPosition":"bottom left"} -->
 		<div class="wp-block-cover has-custom-content-position is-position-bottom-left"><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder.png' ) ); ?>" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
-		<p class="has-text-align-center has-large-font-size"><?php echo esc_html_x( '#1 (Replace with shirt number)', 'sample content', 'armando' ); ?></p>
+		<p class="has-text-align-center has-large-font-size"><?php echo esc_html_x( '#1 (Replace with shirt number)', 'sample content', 'armando-noble' ); ?></p>
 		<!-- /wp:paragraph --></div></div>
 		<!-- /wp:cover -->
 	</div>
@@ -43,35 +43,35 @@
 <hr class="wp-block-separator is-style-wide"/>
 <!-- /wp:separator -->
 <!-- wp:paragraph -->
-<p><strong><?php echo esc_html_x( 'Stats', 'sample content', 'armando' ); ?></strong></p>
+<p><strong><?php echo esc_html_x( 'Stats', 'sample content', 'armando-noble' ); ?></strong></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p><?php echo esc_html_x( 'Born:', 'sample content', 'armando' ); ?></p>
+<p><?php echo esc_html_x( 'Born:', 'sample content', 'armando-noble' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p><?php echo esc_html_x( 'Height:', 'sample content', 'armando' ); ?>
-<br><?php echo esc_html_x( 'Weight:', 'sample content', 'armando' ); ?><br><br>
-<?php echo esc_html_x( 'Games:', 'sample content', 'armando' ); ?><br>
-<?php echo esc_html_x( 'Goals:', 'sample content', 'armando' ); ?><br>
-<?php echo esc_html_x( 'Saves:', 'sample content', 'armando' ); ?><br></p>
+<p><?php echo esc_html_x( 'Height:', 'sample content', 'armando-noble' ); ?>
+<br><?php echo esc_html_x( 'Weight:', 'sample content', 'armando-noble' ); ?><br><br>
+<?php echo esc_html_x( 'Games:', 'sample content', 'armando-noble' ); ?><br>
+<?php echo esc_html_x( 'Goals:', 'sample content', 'armando-noble' ); ?><br>
+<?php echo esc_html_x( 'Saves:', 'sample content', 'armando-noble' ); ?><br></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p><?php echo esc_html_x( 'Seasons: 2019-', 'sample content', 'armando' ); ?></p>
+<p><?php echo esc_html_x( 'Seasons: 2019-', 'sample content', 'armando-noble' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p><?php echo esc_html_x( 'Previous Clubs:', 'sample content', 'armando' ); ?></p>
+<p><?php echo esc_html_x( 'Previous Clubs:', 'sample content', 'armando-noble' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- wp:separator {"className":"is-style-wide"} -->
 <hr class="wp-block-separator is-style-wide"/>
 <!-- /wp:separator -->
 <!-- wp:heading {"level":3} -->
-<h3><?php echo esc_html_x( 'Biography', 'sample content', 'armando' ); ?></h3>
+<h3><?php echo esc_html_x( 'Biography', 'sample content', 'armando-noble' ); ?></h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p><?php echo esc_html_x( 'Lorem Ipsum', 'sample content', 'armando' ); ?></p>
+<p><?php echo esc_html_x( 'Lorem Ipsum', 'sample content', 'armando-noble' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- wp:heading {"level":3} -->
-<h3><?php echo esc_html_x( 'Gallery', 'sample content', 'armando' ); ?></h3>
+<h3><?php echo esc_html_x( 'Gallery', 'sample content', 'armando-noble' ); ?></h3>
 <!-- /wp:heading -->
 <!-- wp:gallery {"linkTo":"none"} -->
 <figure class="wp-block-gallery columns-0 is-cropped"><ul class="blocks-gallery-grid"></ul></figure>

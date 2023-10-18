@@ -1,12 +1,12 @@
 <?php
 /**
  * Title: Default footer
- * Slug: armando/default-footer
+ * Slug: armando-noble/default-footer
  * Description: The default footer. 3 Columns with social links, contact information and latest posts. Copyright below the columns.
  * Categories: footer
  * Block Types: core/columns, core/social-link
  *
- * @package armando
+ * @package armando-noble
  * @since 2.0.0
  */
 
@@ -23,12 +23,12 @@
 	<!-- wp:column -->
 	<div class="wp-block-column">
 		<!-- wp:paragraph {"align":"center"} -->
-		<p class="has-text-align-center"><strong><?php echo esc_html_x( 'Never miss the latest news', 'sample content', 'armando' ); ?></strong></p>
+		<p class="has-text-align-center"><strong><?php echo esc_html_x( 'Never miss the latest news', 'sample content', 'armando-noble' ); ?></strong></p>
 		<!-- /wp:paragraph -->
 
 		<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 		<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"light-blue","textColor":"dark-blue"} -->
-		<div class="wp-block-button"><a class="wp-block-button__link has-dark-blue-color has-light-blue-background-color has-text-color has-background" href="#"><?php echo esc_html_x( 'Join our mailing list', 'sample content', 'armando' ); ?></a></div>
+		<div class="wp-block-button"><a class="wp-block-button__link has-dark-blue-color has-light-blue-background-color has-text-color has-background" href="#"><?php echo esc_html_x( 'Join our mailing list', 'sample content', 'armando-noble' ); ?></a></div>
 		<!-- /wp:button --></div>
 		<!-- /wp:buttons -->
 
@@ -53,9 +53,9 @@
 <!-- wp:group {"layout":{"type":"flex","allowOrientation":false}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"fontSize":"small"} --><p class="has-small-font-size">
 <?php
-echo esc_html__( 'Copyright', 'armando' ) . ' ' .
+echo esc_html__( 'Copyright', 'armando-noble' ) . ' ' .
 /* translators: Copyright date format, see https://www.php.net/date */
-esc_html( date_i18n( _x( 'Y', 'copyright date format', 'armando' ) ) );
+esc_html( date_i18n( _x( 'Y', 'copyright date format', 'armando-noble' ) ) );
 ?>
 </p><!-- /wp:paragraph -->
 <!-- wp:site-title {"level":0,"fontSize":"small"} /--></div>

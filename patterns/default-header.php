@@ -1,12 +1,12 @@
 <?php
 /**
  * Title: Default header
- * Slug: armando/default-header
+ * Slug: armando-noble/default-header
  * Description: Default Header with menu and two background colors.
  * Categories: header
  * Block Types: core/columns, core/site-title, core/search
  *
- * @package armando
+ * @package armando-noble
  * @since 2.0.0
  */
 

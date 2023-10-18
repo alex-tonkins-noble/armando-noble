@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Armando
+ * @package Armando Noble
  * @since 1.0.0
  */
 
@@ -13,7 +13,7 @@
  *
  * @since 1.0.0
  */
-define( 'ARMANDO_VERSION', wp_get_theme()->get( 'Version' ) );
+define( 'ARMANDO_NOBLE_VERSION', wp_get_theme()->get( 'Version' ) );
 
 /**
  * Adds theme-supports.
@@ -21,7 +21,7 @@ define( 'ARMANDO_VERSION', wp_get_theme()->get( 'Version' ) );
  * @since 1.2.4
  * @return void
  */
-function armando_setup() {
+function armando_noble_setup() {
 	// Add support for Block Styles.
 	add_theme_support( 'wp-block-styles' );
 	// Enqueue editor styles.
@@ -32,7 +32,7 @@ function armando_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'armando_setup' );
+add_action( 'after_setup_theme', 'armando_noble_setup' );
 
 // Block styles.
 require_once 'inc/block-styles.php';
@@ -46,22 +46,22 @@ require_once 'inc/block-pattern-categories.php';
  * @return void
  * @since 1.0.0
  */
-function armando_styles() {
+function armando_noble_styles() {
 	wp_enqueue_style(
-		'armando-style',
+		'armando-noble-style',
 		get_stylesheet_uri(),
 		[],
-		ARMANDO_VERSION
+		ARMANDO_NOBLE_VERSION
 	);
 
 	wp_enqueue_style(
-		'armando-shared-styles',
+		'armando-noble-shared-styles',
 		get_theme_file_uri( 'assets/css/style-shared.css' ),
 		[],
-		ARMANDO_VERSION
+		ARMANDO_NOBLE_VERSION
 	);
 }
-add_action( 'wp_enqueue_scripts', 'armando_styles' );
+add_action( 'wp_enqueue_scripts', 'armando_noble_styles' );
 
 /**
  * Show '(No title)' if post has no title.
@@ -70,7 +70,7 @@ add_filter(
 	'the_title',
 	function( $title ) {
 		if ( ! is_admin() && empty( $title ) ) {
-			$title = __( '(No title)', 'armando' );
+			$title = __( '(No title)', 'armando-noble' );
 		}
 
 		return $title;

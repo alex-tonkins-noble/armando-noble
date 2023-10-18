@@ -1,12 +1,12 @@
 <?php
 /**
  * Title: Page layout four: Image columns, site title, tagline and the latest post
- * Slug: armando/page-layout-four
+ * Slug: armando-noble/page-layout-four
  * Categories: layout, columns
  * Block Types: core/columns, core/media-text
  * Viewport Width: 840
  *
- * @package armando
+ * @package armando-noble
  * @since 2.0.0
  */
 

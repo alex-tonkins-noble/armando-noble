@@ -1,12 +1,12 @@
 <?php
 /**
  * Title: Page layout six: Cover image and large author profile
- * Slug: armando/page-layout-six
+ * Slug: armando-noble/page-layout-six
  * Categories: layout, columns
  * Block Types: core/columns, core/cover
  * Viewport Width: 840
  *
- * @package armando
+ * @package armando-noble
  * @since 2.0.0
  */
 
@@ -34,7 +34,7 @@
 		<!-- /wp:spacer -->
 		<!-- wp:buttons -->
 		<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"dark-blue","textColor":"white","className":"has-custom-font-size has-small-font-size"} -->
-		<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link has-white-color has-dark-blue-background-color has-text-color has-background"><?php echo esc_html_x( 'Contact', 'sample content', 'armando' ); ?></a></div>
+		<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link has-white-color has-dark-blue-background-color has-text-color has-background"><?php echo esc_html_x( 'Contact', 'sample content', 'armando-noble' ); ?></a></div>
 		<!-- /wp:button --></div>
 		<!-- /wp:buttons -->
 		<!-- wp:social-links {"iconColor":"black","iconColorValue":"#000","className":"is-style-logos-only"} -->
@@ -48,6 +48,6 @@
 </div>
 <!-- /wp:columns -->
 <!-- wp:heading -->
-<h2><?php echo esc_html_x( 'Heading', 'sample content', 'armando' ); ?></h2>
+<h2><?php echo esc_html_x( 'Heading', 'sample content', 'armando-noble' ); ?></h2>
 <!-- /wp:heading -->
-<!-- wp:paragraph --><p><?php echo esc_html_x( 'Sample content. Replace the text with your own content.', 'sample content', 'armando' ); ?></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><?php echo esc_html_x( 'Sample content. Replace the text with your own content.', 'sample content', 'armando-noble' ); ?></p><!-- /wp:paragraph -->

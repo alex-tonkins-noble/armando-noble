@@ -1,11 +1,11 @@
 <?php
 /**
  * Title: Alternating rows with images and headings
- * Slug: armando/alternating
+ * Slug: armando-noble/alternating
  * Categories: elements
  * Block Types: core/image, core/columns
  *
- * @package armando
+ * @package armando-noble
  * @since 2.0.0
  */
 
@@ -20,9 +20,9 @@
 	<!-- /wp:column -->	
 	<!-- wp:column -->
 	<div class="wp-block-column">
-		<!-- wp:heading --><h2><?php echo esc_html_x( 'Heading', 'sample content', 'armando' ); ?></h2><!-- /wp:heading -->
+		<!-- wp:heading --><h2><?php echo esc_html_x( 'Heading', 'sample content', 'armando-noble' ); ?></h2><!-- /wp:heading -->
 		<!-- wp:paragraph -->
-		<p><?php echo esc_html_x( 'This text was added to show how you can create designs using block patterns.', 'sample content', 'armando' ); ?></p>
+		<p><?php echo esc_html_x( 'This text was added to show how you can create designs using block patterns.', 'sample content', 'armando-noble' ); ?></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:column -->
@@ -42,9 +42,9 @@
 	<!-- /wp:column -->
 	<!-- wp:column -->
 	<div class="wp-block-column">
-		<!-- wp:heading --><h2><?php echo esc_html_x( 'Heading', 'sample content', 'armando' ); ?></h2><!-- /wp:heading -->
+		<!-- wp:heading --><h2><?php echo esc_html_x( 'Heading', 'sample content', 'armando-noble' ); ?></h2><!-- /wp:heading -->
 		<!-- wp:paragraph -->
-		<p><?php echo esc_html_x( 'This text was added to show how you can create designs using block patterns.', 'sample content', 'armando' ); ?></p>
+		<p><?php echo esc_html_x( 'This text was added to show how you can create designs using block patterns.', 'sample content', 'armando-noble' ); ?></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:column -->
@@ -62,9 +62,9 @@
 	<!-- /wp:column -->
 	<!-- wp:column -->
 	<div class="wp-block-column">
-		<!-- wp:heading --><h2><?php echo esc_html_x( 'Heading', 'sample content', 'armando' ); ?></h2><!-- /wp:heading -->
+		<!-- wp:heading --><h2><?php echo esc_html_x( 'Heading', 'sample content', 'armando-noble' ); ?></h2><!-- /wp:heading -->
 		<!-- wp:paragraph -->
-		<p><?php echo esc_html_x( 'This text was added to show how you can create designs using block patterns.', 'sample content', 'armando' ); ?></p>
+		<p><?php echo esc_html_x( 'This text was added to show how you can create designs using block patterns.', 'sample content', 'armando-noble' ); ?></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:column -->
@@ -84,9 +84,9 @@
 	<!-- /wp:column -->
 	<!-- wp:column -->
 	<div class="wp-block-column">
-		<!-- wp:heading --><h2><?php echo esc_html_x( 'Heading', 'sample content', 'armando' ); ?></h2><!-- /wp:heading -->
+		<!-- wp:heading --><h2><?php echo esc_html_x( 'Heading', 'sample content', 'armando-noble' ); ?></h2><!-- /wp:heading -->
 		<!-- wp:paragraph -->
-		<p><?php echo esc_html_x( 'This text was added to show how you can create designs using block patterns.', 'sample content', 'armando' ); ?></p>
+		<p><?php echo esc_html_x( 'This text was added to show how you can create designs using block patterns.', 'sample content', 'armando-noble' ); ?></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:column -->

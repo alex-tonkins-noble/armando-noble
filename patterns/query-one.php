@@ -1,11 +1,11 @@
 <?php
 /**
  * Title: Posts in a 3 column grid with post meta, author and excerpt
- * Slug: armando/query-one
+ * Slug: armando-noble/query-one
  * Categories: query, blog
  * Block Types: core/query
  *
- * @package armando
+ * @package armando-noble
  * @since 2.0.0
  */
 
@@ -14,7 +14,7 @@
 <div class="wp-block-query alignwide">
 	<!-- wp:post-template -->
 		<!-- wp:post-title {"isLink":true,"fontSize":"large"} /-->
-		<!-- wp:template-part {"slug":"meta","theme":"armando"} /-->
+		<!-- wp:template-part {"slug":"meta","theme":"armando-noble"} /-->
 		<!-- wp:post-excerpt {"moreText":"Continue reading"} /-->
 		<!-- wp:spacer {"height":"20px"} -->
 		<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>

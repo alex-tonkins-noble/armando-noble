@@ -1,12 +1,12 @@
 <?php
 /**
  * Title: Footer with latest posts
- * Slug: armando/footer-one
+ * Slug: armando-noble/footer-one
  * Description: Footer with call to action, social links, contact information and latest posts.
  * Categories: footer
  * Block Types: core/columns, core/social-link
  *
- * @package armando
+ * @package armando-noble
  * @since 2.0.0
  */
 
@@ -15,11 +15,11 @@
 <div class="wp-block-columns alignfull has-light-blue-background-color has-background" style="margin-top:0px;margin-bottom:0px;padding-top:2rem;padding-right:2rem;padding-bottom:2rem;padding-left:2rem">
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph -->
-<p><strong><?php echo esc_html_x( 'Never miss the latest news', 'sample content', 'armando' ); ?></strong></p>
+<p><strong><?php echo esc_html_x( 'Never miss the latest news', 'sample content', 'armando-noble' ); ?></strong></p>
 <!-- /wp:paragraph -->
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"dark-blue","textColor":"white"} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-dark-blue-background-color has-text-color has-background" href="#"><?php echo esc_html_x( 'Join our mailing list', 'sample content', 'armando' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-dark-blue-background-color has-text-color has-background" href="#"><?php echo esc_html_x( 'Join our mailing list', 'sample content', 'armando-noble' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 <!-- wp:social-links {"className":"items-justified-left"} -->
@@ -31,13 +31,13 @@
 <!-- /wp:column -->
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph -->
-<p><strong><?php echo esc_html_x( 'Contact', 'sample content', 'armando' ); ?></strong></p>
+<p><strong><?php echo esc_html_x( 'Contact', 'sample content', 'armando-noble' ); ?></strong></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size"><?php echo _x( 'Company name<br>Street<br>City', 'sample content', 'armando' ); ?></p>
+<p class="has-small-font-size"><?php echo _x( 'Company name<br>Street<br>City', 'sample content', 'armando-noble' ); ?></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size"><?php echo _x( 'Phone: 00 00 00 00<br>example@example.org', 'sample content', 'armando' ); ?></p>
+<p class="has-small-font-size"><?php echo _x( 'Phone: 00 00 00 00<br>example@example.org', 'sample content', 'armando-noble' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 <!-- wp:column -->

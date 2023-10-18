@@ -1,4 +1,4 @@
-=== Armando ===
+=== Armando Noble ===
 Contributors: poena
 Tested up to: 6.2
 Requires at least: 6.2
@@ -11,10 +11,7 @@ A full site editing theme for blogs or sports teams.
 
 == Description ==
 A full site editing theme for blogs or sports teams.
-Armando includes multiple block styles and block patterns including site headers, site footers and page layouts.
-
-Named after Diego Armando Maradona https://en.wikipedia.org/wiki/Diego_Maradona
-
+Armando Noble includes multiple block styles and block patterns including site headers, site footers and page layouts.
 
 == Changelog ==
 
@@ -62,7 +59,7 @@ Replaced the body margin in style.css with a margin setting in theme.json.
 The extra style for adding underline to links is no longer needed and has been removed.
 Added an offset to link underlines.
 Updated CSS for the header area and menu.
-The class is-style-armando-no-top-margin has been removed because it was no longer needed.
+The class is-style-armando-noble-no-top-margin has been removed because it was no longer needed.
 Bottom margin for featured images was moved to theme.json.
 Minor improvements to the comment area.
 
@@ -144,8 +141,8 @@ Temporarily add items needed for WordPress.org
 
 == Copyright ==
 
-Armando WordPress Theme, Copyright Carolina Nymark
-Armando is distributed under the terms of the GNU GPL.
+Armando Noble WordPress Theme, Copyright Carolina Nymark
+Armando Noble is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

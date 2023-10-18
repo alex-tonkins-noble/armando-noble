@@ -1,12 +1,12 @@
 <?php
 /**
  * Title: Header with two menus, logo and search
- * Slug: armando/header-three
+ * Slug: armando-noble/header-three
  * Description: A multiline header with two menus, logo and search.
  * Categories: header
  * Block Types: core/columns, core/site-title
  *
- * @package armando
+ * @package armando-noble
  * @since 2.0.0
  */
 

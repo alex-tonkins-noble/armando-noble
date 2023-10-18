@@ -2,7 +2,7 @@
 /**
  * Block styles.
  *
- * @package Armando
+ * @package Armando Noble
  * @since 1.0.0
  */
 
@@ -11,133 +11,133 @@
  *
  * @return void
  */
-function armando_register_block_styles() {
+function armando_noble_register_block_styles() {
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/columns',
 		array(
-			'name'  => 'armando-box-shadow',
-			'label' => __( 'Box shadow', 'armando' ),
+			'name'  => 'armando-noble-box-shadow',
+			'label' => __( 'Box shadow', 'armando-noble' ),
 		)
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/column',
 		array(
-			'name'  => 'armando-box-shadow',
-			'label' => __( 'Box shadow', 'armando' ),
+			'name'  => 'armando-noble-box-shadow',
+			'label' => __( 'Box shadow', 'armando-noble' ),
 		)
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/column',
 		array(
-			'name'  => 'armando-column-border',
-			'label' => __( 'Inner borders', 'armando' ),
+			'name'  => 'armando-noble-column-border',
+			'label' => __( 'Inner borders', 'armando-noble' ),
 		)
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/column',
 		array(
-			'name'  => 'armando-column-r-l-borders',
-			'label' => __( 'Right and left borders', 'armando' ),
+			'name'  => 'armando-noble-column-r-l-borders',
+			'label' => __( 'Right and left borders', 'armando-noble' ),
 		)
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/group',
 		array(
-			'name'  => 'armando-box-shadow',
-			'label' => __( 'Box shadow', 'armando' ),
+			'name'  => 'armando-noble-box-shadow',
+			'label' => __( 'Box shadow', 'armando-noble' ),
 		)
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/heading',
 		array(
-			'name'  => 'armando-top-bottom-border',
-			'label' => __( 'Top and bottom border', 'armando' ),
+			'name'  => 'armando-noble-top-bottom-border',
+			'label' => __( 'Top and bottom border', 'armando-noble' ),
 		)
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/heading',
 		array(
-			'name'  => 'armando-vertical-text',
-			'label' => __( 'Vertical', 'armando' ),
+			'name'  => 'armando-noble-vertical-text',
+			'label' => __( 'Vertical', 'armando-noble' ),
 		)
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/heading',
 		array(
-			'name'  => 'armando-skewed',
-			'label' => __( 'Skewed', 'armando' ),
+			'name'  => 'armando-noble-skewed',
+			'label' => __( 'Skewed', 'armando-noble' ),
 		)
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/media-text',
 		array(
-			'name'  => 'armando-skewed',
-			'label' => __( 'Skewed', 'armando' ),
+			'name'  => 'armando-noble-skewed',
+			'label' => __( 'Skewed', 'armando-noble' ),
 		)
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/paragraph',
 		array(
-			'name'  => 'armando-vertical-text',
-			'label' => __( 'Vertical', 'armando' ),
+			'name'  => 'armando-noble-vertical-text',
+			'label' => __( 'Vertical', 'armando-noble' ),
 		)
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/post-title',
 		array(
-			'name'  => 'armando-top-bottom-border',
-			'label' => __( 'Top and bottom border', 'armando' ),
+			'name'  => 'armando-noble-top-bottom-border',
+			'label' => __( 'Top and bottom border', 'armando-noble' ),
 		)
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/post-title',
 		array(
-			'name'  => 'armando-vertical-text',
-			'label' => __( 'Vertical', 'armando' ),
+			'name'  => 'armando-noble-vertical-text',
+			'label' => __( 'Vertical', 'armando-noble' ),
 		)
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/post-title',
 		array(
-			'name'  => 'armando-skewed',
-			'label' => __( 'Skewed', 'armando' ),
+			'name'  => 'armando-noble-skewed',
+			'label' => __( 'Skewed', 'armando-noble' ),
 		)
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/site-title',
 		array(
-			'name'  => 'armando-vertical-text',
-			'label' => __( 'Vertical', 'armando' ),
+			'name'  => 'armando-noble-vertical-text',
+			'label' => __( 'Vertical', 'armando-noble' ),
 		)
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/site-title',
 		array(
-			'name'  => 'armando-top-bottom-border',
-			'label' => __( 'Top and bottom border', 'armando' ),
+			'name'  => 'armando-noble-top-bottom-border',
+			'label' => __( 'Top and bottom border', 'armando-noble' ),
 		)
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/template-part',
 		array(
-			'name'  => 'armando-sticky-header',
-			'label' => __( 'Sticky header', 'armando' ),
+			'name'  => 'armando-noble-sticky-header',
+			'label' => __( 'Sticky header', 'armando-noble' ),
 		)
 	);
 }
-add_action( 'init', 'armando_register_block_styles' );
+add_action( 'init', 'armando_noble_register_block_styles' );

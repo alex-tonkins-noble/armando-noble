@@ -1,12 +1,12 @@
 <?php
 /**
  * Title: Basic header with site title and navigation.
- * Slug: armando/header-one
+ * Slug: armando-noble/header-one
  * Description: Header with title to the left of the navigation.
  * Categories: header
  * Block Types: core/site-title, core/navigation
  *
- * @package armando
+ * @package armando-noble
  * @since 2.0.0
  */
 
