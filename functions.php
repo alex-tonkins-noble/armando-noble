@@ -86,3 +86,37 @@ function block_theme_image_sizes( $sizes ) {
         'extra-small' => __( 'Extra Small' )
     ) );
 }
+
+
+// Noble Functions Alex added 18th Oct 2023.
+
+define('THEME_VERSION', wp_get_theme()->get('Version'));
+define('THEME_PATH', dirname(__FILE__));
+define('THEME_STYLES_URL', get_template_directory_uri() . '/build/styles/');
+define('THEME_SCRIPTS_URL', get_template_directory_uri() . '/build/scripts/');
+define('THEME_BLOCKS_URL', get_template_directory_uri() . '/build/blocks/');
+define('THEME_ASSETS_URL', get_template_directory_uri() . '/assets/');
+
+// Block Registration
+function register_noble_blocks() {
+	$blocks_to_register = [
+		'custom-test-block'
+	];
+
+	foreach ($blocks_to_register as $block_dir) {
+		register_block_type( __DIR__ . '/build/blocks/' . $block_dir );
+	}
+}
+add_action( 'init', 'register_noble_blocks' );
+
+// Enqueueing Styles
+function enqueue_styles() {
+    wp_enqueue_style('np-test', THEME_STYLES_URL . 'test.css', [], THEME_VERSION);
+}
+add_action('enqueue_block_assets', 'enqueue_styles');
+
+// Admin Scripts
+function block_admin_scripts() {
+    wp_enqueue_script( 'np-editor-scripts', THEME_SCRIPTS_URL . 'editor.js', [], THEME_VERSION, true );
+}
+add_action( 'admin_enqueue_scripts', 'block_admin_scripts' );

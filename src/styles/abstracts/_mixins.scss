@@ -1,0 +1,55 @@
+@use 'variables' as *;
+
+// Create the following mixins
+// // Grid / Container / Row initiators
+// // Every Heading type and Paragraph
+// // Buttons
+
+@mixin svg-mask {
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+
+
+@mixin svg-mask-icon($color, $svg: false) {
+  position: relative;
+
+  &:before {
+    content: '';
+    background-color: $color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    transition: background-color $transition;
+    cursor: pointer;
+
+    @if $svg !=false {
+      mask-image: url($svg);
+    }
+
+    @content;
+  }
+}
+
+@mixin default-link {
+  cursor: pointer;
+  text-decoration: underline;
+  transition: 0.2s;
+  color: var(--interactive-primary);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--hover-primary);
+  }
+}
+
