@@ -20,6 +20,7 @@
   "dependencies": {
     "@wordpress/blocks": "^12.21.0",
     "@wordpress/dom-ready": "^3.44.0",
+    "@wordpress/hooks": "^3.44.0",
     "classnames": "^2.3.2"
   }
 }

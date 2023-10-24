@@ -1,5 +1,6 @@
 @use '../variables' as *;
 
+.editor-styles-wrapper,
 :root {
     --#{$prefix}body-size: 16px;
     --#{$prefix}body-line-height: 1.6em;
@@ -7,11 +8,11 @@
 
     --#{$prefix}h1-size: 60px;
     --#{$prefix}h1-line-height: 1.4em;
-    --#{$prefix}h1-weight: 400;
+    --#{$prefix}h1-weight: 600;
 
     --#{$prefix}h2-size: 48px;
     --#{$prefix}h2-line-height: 1.4em;
-    --#{$prefix}h2-weight: 400;
+    --#{$prefix}h2-weight: 600;
 
     --#{$prefix}h3-size: 36px;
     --#{$prefix}h3-line-height: 1.4em;
