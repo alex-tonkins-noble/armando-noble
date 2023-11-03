@@ -2,7 +2,17 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 2,
 	"settings": {
-		"appearanceTools": true,
+		"appearanceTools": false,
+		"layout": {
+			"contentSize": "960px",
+			"wideSize": "1200px"
+		},
+		"spacing": {
+			"margin": false,
+			"padding": false,
+			"units": [ "px", "em" ],
+			"blockGap": true
+		},
 		"color": {
 			"palette": [
 				{
@@ -224,21 +234,15 @@
 				  ]
 				}
 			]
-		},
-		"spacing": {
-			"margin": false,
-			"padding": false,
-			"units": [ "px", "em" ]
-		},
-		"layout": {
-			"contentSize": "960px",
-			"wideSize": "1200px"
 		}
 	},
 	"styles": {
+		"spacing": {
+			"blockGap": "40px"
+		},
 		"color": {
-			"background": "var(--wp--preset--color--white)",
-			"text": "var(--wp--preset--color--black)"
+			"background": "var(--np-white)",
+			"text": "var(--np-black)"
 		},
 		"typography": {
 			"fontSize": "16px",
@@ -248,7 +252,18 @@
 		"elements": {
 			"link": {
 				"color": {
-					"text": "var(--wp--preset--color--dark-blue)"
+					"text": "var(--np-tertiary)"
+				},
+				"typography": {
+					"textDecoration": "underline"
+				},
+				":hover": {
+					"color": {
+						"text": "var(--np-secondary)"
+					},
+					"typography": {
+						"textDecoration": "underline"
+					}
 				}
 			},
 			"button": {

@@ -1,0 +1,13 @@
+@use "../abstracts/variables/" as *;
+
+@use "../abstracts/mixins/structure/rows" as rows;
+@use "../abstracts/mixins/structure/columns" as columns;
+
+// Generate rows using Bootstrap's row and column mixins
+.row {
+    @include rows.make-row();
+
+    > * {
+        @include columns.make-col-ready();
+    }
+}

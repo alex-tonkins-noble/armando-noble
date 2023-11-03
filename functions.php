@@ -138,6 +138,6 @@ add_action( 'admin_enqueue_scripts', 'block_admin_scripts' );
 
 // Editor Styles
 function editor_styles() {
-	add_editor_style( 'build/styles/frontend-styles.css' );
+	add_editor_style( 'build/styles/editor-styles.css' );
 }
 add_action( 'after_setup_theme', 'editor_styles', 10 );

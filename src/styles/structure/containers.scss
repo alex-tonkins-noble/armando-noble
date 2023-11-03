@@ -1,0 +1,6 @@
+@use "../abstracts/variables/" as *;
+@use "../abstracts/mixins/structure/containers" as containers;
+@use "../abstracts/mixins/breakpoints" as *;
+
+// Responsive containers that are 100% wide until a breakpoint
+@include containers.container-reg('.container');

@@ -31,10 +31,6 @@ body {
 	text-underline-offset: 2px;
 }
 
-/* Adjust underlines to improve accessibility. This is a temporary solution.*/
-.wp-site-blocks a:hover {
-	text-decoration: none;
-}
 
 /* Adjust when the menu button is shown */
 @media (max-width: 1000px) {
@@ -95,19 +91,5 @@ body {
 @media ( max-width: 600px ) {
 	body {
 		--wp--preset--font-size--x-large: 2rem;
-	}
-}
-
-/*
- * Increase padding on smaller screens. 
- * Temporary solution to avoid text content running up to the edge of the browser window,
- * making the text difficult to read.
-*/
-@media ( max-width: 840px ) {
-	main > :not(.alignfull),
-	main .entry-content > :not(.alignfull),
-	main .entry-content .wp-block-columns.alignfull p {
-		padding-left: 2rem;
-		padding-right: 2rem;
 	}
 }

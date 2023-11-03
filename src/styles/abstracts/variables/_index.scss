@@ -3,3 +3,24 @@ $transition: 0.2s;
 
 $button_padding_v: 10px;
 $button_padding_h: 15px;
+
+$container_padding: var(--container-padding);
+$grid_columns: 12;
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 769px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1440px,
+);
+
+$container-max-widths: (
+	xs: 100%,
+    sm: 100%,
+    md: 720px,
+    lg: 960px,
+    xl: 1230px,
+    xxl: 1230px
+);

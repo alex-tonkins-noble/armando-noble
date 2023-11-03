@@ -1,0 +1,4 @@
+// This file contains any mixins that involve updating any root variables.
+// They are in mixins due to being used in different areas on both the frontend and editor stylesheets.
+@forward 'change-global-content-size';
+@forward 'change-elements-with-backgrounds-content-size';

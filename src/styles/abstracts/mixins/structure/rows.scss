@@ -1,0 +1,10 @@
+@use "../../variables" as *;
+@use "../../mixins/breakpoints" as *;
+
+// Generate row styling, usually for usage within containers.
+@mixin make-row($gutter: $container_padding) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(#{$gutter} * -1); // stylelint-disable-line function-disallowed-list
+    margin-left: calc(#{$gutter} * -1); // stylelint-disable-line function-disallowed-list
+}
