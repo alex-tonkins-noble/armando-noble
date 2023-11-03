@@ -2,9 +2,6 @@
 @forward './colours';
 @forward './fonts';
 
-@use '../variables' as *;
-@use '../mixins/breakpoints' as *;
-
 :root {
     --container-padding: 15px;
 }
