@@ -7,7 +7,7 @@
 @use './abstracts/mixins/root-variables' as rv;
 @use './abstracts/mixins/structure/containers' as containers;
 
-// Apply container sizes to frontend - more specifity needed here in comparision to editor
+// Apply container sizes to frontend - more specifity here compared to editor styles
 :root {
     body {
         @include rv.change-global-content-size();
@@ -47,6 +47,11 @@
                     max-width: 100%;
                 }
             }
+        }
+
+        > ul, > ol {
+            @include containers.container-base-styles($disable-padding: "left");
+            max-width: var(--wp--style--global--content-size);
         }
     }
 }

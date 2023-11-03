@@ -1,36 +1,12 @@
 /*
 Theme Name: Armando Noble
-Author: Carolina Nymark
-Author URI: https://fullsiteediting.com
-Theme URI:
-Version: 2.0.1
-Description: A full site editing theme for blogs or sports teams. Armando Noble includes multiple block styles and block patterns including site headers, site footers and page layouts.
-Tags: full-site-editing, blog, one-column, two-columns, editor-style, block-styles
+Author: Noble Performs
+Author URI: https://nobleperforms.co.uk/
+Theme URI: https://nobleperforms.co.uk/
+Version: 1.0.0
+Description: A full site editing theme for Noble Performs shiny new site. The theme includes multiple block styles and block patterns including site headers, site footers and page layouts.
 Text Domain: armando-noble
-Requires at least: 6.2
-Requires PHP: 7.2
-Tested up to: 6.2
-
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-
-All files, unless otherwise stated, are released under the GNU General Public
-License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned
-with others.
 */
-
-/* Make sure that full width blocks are full width, reset the browser margins. */
-body {
-	overflow-x: hidden;
-}
-
-.wp-site-blocks a {
-	text-underline-offset: 2px;
-}
-
 
 /* Adjust when the menu button is shown */
 @media (max-width: 1000px) {
@@ -57,17 +33,6 @@ body {
 	}
 }
 
-/* Comments */
-.commentlist,
-.children {
-	list-style: none;
-}
-
-.comment-meta .says,
-.home .comment-area {
-	display: none; /* Hide single page comment area on the home page */
-}
-
 /* Sticky header */
 .is-style-armando-noble-sticky-header {
 	position: sticky;
@@ -84,12 +49,5 @@ body {
 @media screen and (max-width: 782px) {
 	.is-style-armando-noble-sticky-header {
 		position: initial;
-	}
-}
-
-/* Reduce the size of extra large text on small screens. */
-@media ( max-width: 600px ) {
-	body {
-		--wp--preset--font-size--x-large: 2rem;
 	}
 }
