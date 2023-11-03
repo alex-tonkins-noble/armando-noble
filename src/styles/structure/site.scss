@@ -1,0 +1,11 @@
+// Maybe rename this file, it accounts for any misc global site structure
+
+.wp-site-blocks {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .site-footer {
+        margin-top: auto;
+    }
+}
