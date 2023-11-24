@@ -8,7 +8,6 @@ addFilter(
 	"ns/button_block_supports",
 	(props, name) => {
 		if (name == "core/button") {
-			console.log(props);
 			props.styles = [];
 		}
 		return props;

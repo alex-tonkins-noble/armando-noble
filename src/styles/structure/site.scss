@@ -1,9 +1,14 @@
 // Maybe rename this file, it accounts for any misc global site structure
+@use '../abstracts/variables' as *;
 
 .wp-site-blocks {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+
+    > * {
+        margin: 0 0 var(--#{$prefix}block-gap);
+    }
 
     .site-footer {
         margin-top: auto;
