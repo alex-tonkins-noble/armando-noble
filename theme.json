@@ -238,7 +238,7 @@
 	},
 	"styles": {
 		"spacing": {
-			"blockGap": "40px"
+			"blockGap": "var(--np-block-gap)"
 		},
 		"color": {
 			"background": "var(--np-white)",

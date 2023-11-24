@@ -100,7 +100,8 @@ define('THEME_ASSETS_URL', get_template_directory_uri() . '/assets/');
 // Block Registration
 function register_noble_blocks() {
 	$blocks_to_register = [
-		'custom-test-block'
+		'custom-test-block',
+		'example',
 	];
 
 	foreach ($blocks_to_register as $block_dir) {
