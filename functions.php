@@ -102,6 +102,8 @@ function register_noble_blocks() {
 	$blocks_to_register = [
 		'custom-test-block',
 		'example',
+		'section',
+		'container',
 	];
 
 	foreach ($blocks_to_register as $block_dir) {
