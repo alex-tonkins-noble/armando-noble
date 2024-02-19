@@ -3,9 +3,10 @@
 	"version": 2,
 	"settings": {
 		"appearanceTools": false,
+		"useRootPaddingAwareAlignments": true,
 		"layout": {
-			"contentSize": "960px",
-			"wideSize": "1200px"
+			"contentSize": "var(--ns-contentSize)",
+			"wideSize": "var(--ns-wideSize)"
 		},
 		"spacing": {
 			"margin": false,
@@ -238,7 +239,11 @@
 	},
 	"styles": {
 		"spacing": {
-			"blockGap": "var(--np-block-gap)"
+			"blockGap": "var(--np-block-gap)",
+			"padding": {
+				"left": "var(--ns-gutter)",
+				"right": "var(--ns-gutter)"
+			}
 		},
 		"color": {
 			"background": "var(--np-white)",

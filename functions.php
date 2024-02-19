@@ -1,4 +1,16 @@
 <?php
+
+// Noble Functions Alex added 18th Oct 2023.
+
+define('THEME_VERSION', wp_get_theme()->get('Version'));
+define('THEME_PATH', dirname(__FILE__));
+define('THEME_BUILD_PATH', THEME_PATH . '/build');
+define('THEME_STYLES_URL', get_template_directory_uri() . '/build/css/');
+define('THEME_SCRIPTS_URL', get_template_directory_uri() . '/build/js/');
+define('THEME_BLOCKS_URL', get_template_directory_uri() . '/build/blocks/');
+define('THEME_ASSETS_URL', get_template_directory_uri() . '/assets/');
+
+
 /**
  * Functions and definitions
  *
@@ -34,11 +46,15 @@ function armando_noble_setup() {
 }
 add_action( 'after_setup_theme', 'armando_noble_setup' );
 
-// Block styles.
+// Block Styles
 require_once 'inc/block-styles.php';
 
-// Block pattern categories.
+// Register Blocks
+require_once 'inc/register-blocks.php';
+
+// Block Patterns
 require_once 'inc/block-pattern-categories.php';
+require_once 'inc/remove-core-wp-patterns.php';
 
 /**
  * Enqueue the style.css file.
@@ -87,31 +103,6 @@ function block_theme_image_sizes( $sizes ) {
     ) );
 }
 
-
-// Noble Functions Alex added 18th Oct 2023.
-
-define('THEME_VERSION', wp_get_theme()->get('Version'));
-define('THEME_PATH', dirname(__FILE__));
-define('THEME_STYLES_URL', get_template_directory_uri() . '/build/styles/');
-define('THEME_SCRIPTS_URL', get_template_directory_uri() . '/build/scripts/');
-define('THEME_BLOCKS_URL', get_template_directory_uri() . '/build/blocks/');
-define('THEME_ASSETS_URL', get_template_directory_uri() . '/assets/');
-
-// Block Registration
-function register_noble_blocks() {
-	$blocks_to_register = [
-		'custom-test-block',
-		'example',
-		'section',
-		'container',
-	];
-
-	foreach ($blocks_to_register as $block_dir) {
-		register_block_type( __DIR__ . '/build/blocks/' . $block_dir );
-	}
-}
-add_action( 'init', 'register_noble_blocks' );
-
 /**
  * The Styling of the site works as follows:
  * 2x Main Top-Level Stylesheets.
@@ -144,3 +135,4 @@ function editor_styles() {
 	add_editor_style( 'build/styles/editor-styles.css' );
 }
 add_action( 'after_setup_theme', 'editor_styles', 10 );
+

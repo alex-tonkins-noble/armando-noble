@@ -1,27 +1,22 @@
 {
   "scripts": {
-    "build": "wp-scripts build --webpack-copy-php",
-    "check-engines": "wp-scripts check-engines",
-    "check-licenses": "wp-scripts check-licenses",
-    "format": "wp-scripts format",
-    "lint:css": "wp-scripts lint-style",
-    "lint:js": "wp-scripts lint-js",
-    "lint:md:docs": "wp-scripts lint-md-docs",
-    "lint:pkg-json": "wp-scripts lint-pkg-json",
-    "packages-update": "wp-scripts packages-update",
-    "plugin-zip": "wp-scripts plugin-zip",
     "start": "wp-scripts start --webpack-copy-php",
-    "test:e2e": "wp-scripts test-e2e",
-    "test:unit": "wp-scripts test-unit-js"
+    "build": "wp-scripts build --webpack-copy-php",
+    "packages-update": "wp-scripts packages-update"
   },
   "devDependencies": {
-    "@wordpress/scripts": "^26.0.0"
+    "@wordpress/scripts": "^26.0.0",
+    "classnames": "^2.5.1",
+    "lodash": "^4.17.21",
+    "sass": "^1.32.8",
+    "webpack-remove-empty-scripts": "^1.0.4"
   },
   "dependencies": {
-    "@wordpress/blocks": "^12.21.0",
-    "@wordpress/components": "^25.12.0",
-    "@wordpress/dom-ready": "^3.44.0",
-    "@wordpress/hooks": "^3.44.0",
-    "classnames": "^2.3.2"
+    "@wordpress/block-editor": "^12.17.0",
+    "@wordpress/blocks": "^12.25.0",
+    "@wordpress/components": "^25.14.0",
+    "@wordpress/data": "^9.18.0",
+    "@wordpress/element": "^5.25.0",
+    "@wordpress/i18n": "^4.49.0"
   }
 }
