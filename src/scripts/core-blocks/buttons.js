@@ -1,11 +1,16 @@
 import domReady from "@wordpress/dom-ready";
 import { registerBlockStyle } from "@wordpress/blocks";
 import { addFilter } from "@wordpress/hooks";
+import { modifyBlockSettings } from "./functions/modifyBlockSettings";
+
+addFilter("blocks.registerBlockType", "np/button", (settings) =>
+	modifyBlockSettings(settings, ["core/button"], true, false, true, true, false)
+);
 
 // Remove all initial Button Styles
 addFilter(
 	"blocks.registerBlockType",
-	"ns/button_block_supports",
+	"np/button_block_styles",
 	(props, name) => {
 		if (name == "core/button") {
 			props.styles = [];
