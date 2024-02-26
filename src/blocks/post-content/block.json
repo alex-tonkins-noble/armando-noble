@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "np/post-content",
+	"version": "1.0.0",
+	"title": "Post Content",
+	"category": "",
+	"icon": "layout",
+	"description": "For Developer use within the main template block ONLY. Do not use this within Posts and expect good results.",
+	"keywords": [""],
+	"supports": {
+		"html": false
+	},
+	"textdomain": "np-post-content",
+	"render": "file:./render.php"
+}
