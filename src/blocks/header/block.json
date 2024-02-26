@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "np/header",
+	"version": "1.0.0",
+	"title": "Header",
+	"category": "",
+	"icon": "layout",
+	"description": "The Header of the site. Used to contain elements such as the Logo.",
+	"keywords": [""],
+	"supports": {
+		"html": false
+	},
+	"textdomain": "np-header",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,9 @@
+.wp-block-np-header {
+	
+}
+
+header.wp-block-template-part {
+    &:has(.wp-block-np-header) {
+        background-color: red;
+    }
+}
