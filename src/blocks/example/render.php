@@ -1,1 +1,0 @@
-<p <?php echo get_block_wrapper_attributes(); ?>>Hello</p>
