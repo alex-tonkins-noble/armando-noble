@@ -5,50 +5,13 @@
 @use './abstracts/variables' as *;
 @use './abstracts/mixins/breakpoints' as *;
 @use './abstracts/mixins/root-variables' as rv;
+@use './abstracts/mixins/architecture' as architecture;
 @use './abstracts/mixins/structure/containers' as containers;
 
-// Apply container sizes to editor
+
 :root {
-    @include rv.change-global-content-size();
-}
-
-.is-root-container {
-    > .wp-block {
-        // Find all immediate blocks within the wp.block element and assign them their respective widths
-        &:not(
-            .alignleft,
-            .alignright,
-            .alignfull,
-            .alignwide,
-            ul,
-            ol
-        ) {
-            @include containers.container-base-styles;
-            max-width: var(--wp--style--global--content-size);
-        }
-
-        // Add the container widths onto immediate children of alignfull parent elements
-        &.alignfull {
-            > * {
-                @include containers.container-base-styles;
-                max-width: var(--wp--style--global--content-size);
-            }
-        }
-
-        // Fullwidth parent elements that have a background colour are already contained, so lets force the nested elements max-width to be 100%
-        &:not(.alignfull) {
-            &.has-background {
-                @include rv.change-elements-with-backgrounds-content-size();
-
-                > * {
-                    max-width: 100%;
-                }
-            }
-        }
-    }
-
-    > ul, > ol {
-        @include containers.container-base-styles($disable-padding: "left");
-        max-width: var(--wp--style--global--content-size);
+    .is-root-container {
+        @include architecture.site-structure();
+        @include architecture.top-level-layout-blocks-background-padding();
     }
 }

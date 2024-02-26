@@ -132,7 +132,32 @@ add_action( 'admin_enqueue_scripts', 'block_admin_scripts' );
 
 // Editor Styles
 function editor_styles() {
-	add_editor_style( 'build/styles/editor-styles.css' );
+	add_editor_style( 'build/css/editor-styles.css' );
 }
 add_action( 'after_setup_theme', 'editor_styles', 10 );
 
+// Register Block Categories
+function register_block_categories( $categories, $post ) {
+	
+	return array_merge(
+		array(
+			array(
+				'slug' => 'page-layout',
+				'title' => 'Page Layout',
+			),
+		),
+		$categories
+	);
+}
+add_filter( 'block_categories_all', 'register_block_categories' , 10, 2 );
+
+
+// TODO: Think about disabling and build our own layout styles.
+// add_theme_support( 'disable-layout-styles' );
+
+// Disable ability for the user to add custom colours. Restricts to the Theme.
+add_theme_support( 'disable-custom-colors' );
+add_theme_support( 'disable-custom-gradients' );
+
+// TODO: Not sure what this does.
+add_theme_support( 'editor-gradient-presets', array() );

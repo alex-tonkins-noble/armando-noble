@@ -13,3 +13,13 @@
 @use './elements/buttons';
 
 @use './abstracts/mixins/breakpoints';
+
+
+
+
+// TODO: Should this padding be hardcoded really? Not very maintainable.
+// Also, which file should this go in?
+// Override default layout elements padding - mainly for nested Groups / Columns.
+:where(.has-background) {
+    padding: 20px;
+}

@@ -5,53 +5,18 @@
 @use './abstracts/variables' as *;
 @use './abstracts/mixins/breakpoints' as *;
 @use './abstracts/mixins/root-variables' as rv;
+@use './abstracts/mixins/architecture' as architecture;
 @use './abstracts/mixins/structure/containers' as containers;
 
 // Apply container sizes to frontend - more specifity here compared to editor styles
-:root {
-    body {
-        @include rv.change-global-content-size();
-    }
+main {
+    @include architecture.site-structure();
 }
 
-// Use global container styles for all blocks except those with any specific alignments.
-.site-main {
-    .entry-content {
-        > :not(
-            .alignleft,
-            .alignright,
-            .alignfull,
-            .alignwide,
-            ul,
-            ol
-        ) {
-            @include containers.container-base-styles;
-            max-width: var(--wp--style--global--content-size);
-        }
-
-        // Now add the container widths onto immediate children of alignfull parent elements
-        > .alignfull {
-            > * {
-                @include containers.container-base-styles;
-                max-width: var(--wp--style--global--content-size);
-            }
-        }
-
-        // Remove the padding width from contained elements with a background - we don't want background colours to spill outside of their containers.
-        > :not(.alignfull) {
-            &.has-background {
-                @include rv.change-elements-with-backgrounds-content-size();
-                
-                // Fullwidth parent elements that have a background colour are already contained, so lets force the nested elements max-width to be 100%
-                > * {
-                    max-width: 100%;
-                }
-            }
-        }
-
-        > ul, > ol {
-            @include containers.container-base-styles($disable-padding: "left");
-            max-width: var(--wp--style--global--content-size);
-        }
+.wp-site-blocks {
+    // Reset background styles on groups to use our own padding, as well as our own gutters.
+    // Header, Footer & Main
+    > * {
+        @include architecture.top-level-layout-blocks-background-padding();
     }
 }

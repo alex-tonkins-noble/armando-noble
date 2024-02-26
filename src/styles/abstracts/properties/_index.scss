@@ -4,5 +4,47 @@
 @forward './spacing';
 
 :root {
+    // TODO: Rename prefix - probably sitewide too.
+    --ns-wide-size: 1200px;
+    --ns-regular-size: 960px;
+    --ns-small-size: 800px;
+}
+
+:root {
+    // TODO: This isn't used.
     --container-padding: 15px;
+
+    // Define the regular site gutter. 
+    --site-gutter: 10px;
+
+    // The minimum size of the wide content area used within the grid layout.
+    --grid-wide-size-minimum-width: 40px;
+
+    // Calculate the actual site gutter, when taking into account the minimum wide grid size.
+    --final-site-gutter: calc(var(--site-gutter) + var(--grid-wide-size-minimum-width));
+
+    // The difference between the wide and regular grid sizes.
+    // We divide the total size by 2, because it is shared across two columns in the the grid structure - one at the beginning, and one at the end.
+    --np-content-wide-regular-size-difference: calc((var(--ns-wide-size) - var(--ns-regular-size)) * 0.5);
+
+    // The difference between the regular and small grid sizes.
+    // We divide the total size by 2, because it is shared across two columns in the the grid structure - one at the beginning, and one at the end.
+    --np-content-regular-small-size-difference: calc((var(--ns-regular-size) - var(--ns-small-size)) * 0.5);
+
+
+    // TODO: DEFINE THIS
+    --full: minmax(var(--site-gutter), 1fr);
+
+    // Define the regular content size as the **smallest value** out of the content-size variable OR (100% - 40px).
+    // --regular: min(var(--ns-regular-size), calc(100% - ((var(--site-gutter) * 2) + (var(--grid-wide-size-minimum-width) * 2))));
+    --regular: minmax(0, var(--np-content-regular-small-size-difference));
+
+    // Define the wide content size. This effectively says "the wide size can be anything from the wide size's minimum width, up to a maximum width of the wide and regular size difference".
+    --wide: minmax(var(--grid-wide-size-minimum-width), var(--np-content-wide-regular-size-difference));
+
+    // Define the smaller content size.
+    --small: min(var(--ns-small-size), calc(100% - ((var(--site-gutter) * 2) + (var(--grid-wide-size-minimum-width) * 2))));
+
+    // Define the padding / vertical spacing amount to be used between top level elements and for padding on elements with the .has-background class.
+    --top-level-element-vertical-spacing: 40px;
 }

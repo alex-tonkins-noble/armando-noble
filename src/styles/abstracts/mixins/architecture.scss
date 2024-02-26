@@ -1,0 +1,51 @@
+// This file defines the custom structure and architecture of the site.
+// We are NOT using all of WordPress' layout functionality out of the box, that is where this file comes in.
+// NOTE - This mixin is to be used within editor-styles.scss and frontend-styles.scss ONLY.
+
+@mixin site-structure() {
+    // TODO: Revisit this. Post Title uses box-sizing: border-box; and it screws with padding and margins for max widths.
+    > * {
+        box-sizing: content-box !important;
+    }
+
+    // Any element immediately nested within the main element is assigned the site-wide width, unless they are in the :not() selector - this is because they have their own rules.
+    > :not(.alignleft):not(.alignright):not(.alignfull):not(.alignwide):not(.wp-block-np-section) {
+        max-width: var(--ns-regular-size);
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    // Alignwide works the same as above, however it's width is larger.
+    > .alignwide {
+        max-width: var(--ns-wide-size);
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+
+    // Site-wide gutters are also added as padding to ensure the content is correctly contained.
+    // Ignored all elements with their own, necessary padding OR if they have their own layout structure / styles.
+    > :not(.alignleft):not(.alignright):not(.alignfull):not(.wp-block-np-section):not(ul):not(ol) {
+        padding-right: var(--final-site-gutter);
+        padding-left: var(--final-site-gutter);
+    }
+
+    // 
+    > * {
+        &:not(.has-background) {
+            &:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(ol):not(li) {
+                margin-top: var(--top-level-element-vertical-spacing);
+                margin-bottom: var(--top-level-element-vertical-spacing);
+            }
+        }
+    }
+}
+
+@mixin top-level-layout-blocks-background-padding() {
+    // Target all top level Group & Column blocks that have a background and re-assign their padding as our global variable.
+    > .wp-block-group,
+    > .wp-block-columns {
+        &.has-background {
+            padding: var(--top-level-element-vertical-spacing) var(--site-gutter);
+        }
+    }
+}

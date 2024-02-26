@@ -1,3 +1,81 @@
-.wp-block-noble-performs-section {
-	
+@use '../../styles/abstracts/variables' as *;
+@use '../../styles/abstracts/mixins/typography' as typography;
+
+// TODO: Move this into a re-usable abstract file.
+@mixin grid-layout() {
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns:
+        [full-start] var(--full)
+            [wide-start] var(--wide)
+                [regular-start] var(--regular)
+                    [small-start] var(--small) [small-end]
+                var(--regular) [regular-end]
+            var(--wide) [wide-end]
+        var(--full) [full-end];
+}
+
+.wp-block-np-section {
+    @include grid-layout();
+
+    // Swap out the margins for paddings if a background has been added. Padding is needed and having margins also would create unnecessary space.
+    &.has-background {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: var(--top-level-element-vertical-spacing) 0;
+    }
+}
+
+.wp-block-np-section__container {
+    &.content--size-full {
+        grid-column: full;
+    }
+
+    &.content--size-wide {
+        grid-column: wide;
+    }
+
+    &.content--size-regular {
+        grid-column: regular;
+    }
+
+    > * {
+        // Trying to retain as much of the site-wide defined spacing as possible, so we want the content tags to retain their own margins
+        // TODO: This margin CANNOT be hardcoded. We need to figure out a way to globalise this margin. It psobably needs to be the gap between blocks too within Groups and Columns.
+        &:not(h1, h2, h3, h4, h5, h6, p, ul, ol) {
+            margin: 20px 0;
+        }
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// Vertical Text Column
+.vertical-content {
+    grid-column: 2 / 3;
+
+    // Register a container query to pass sizing down to the child element
+    container-type: size;
+    resize: vertical;
+
+    > * {
+        writing-mode: vertical-rl;
+        margin: 0;
+        transform-origin: center;
+        transform: rotate(180deg);
+        text-align: right;
+
+        position: sticky;
+        top: 20px;
+
+        // Include the site-wide body text styles, but override the font size to be a maximum of 100% of the parent (container).
+        @include typography.set-body-font-styles();
+        font-size: min(var(--#{$prefix}body-size), 100cqw);
+    }
 }

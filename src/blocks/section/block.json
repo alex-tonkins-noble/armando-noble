@@ -1,13 +1,14 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
-	"name": "noble-performs/section",
+	"name": "np/section",
 	"version": "1.0.0",
 	"title": "Section",
-	"category": "widgets",
+	"category": "page-layout",
 	"icon": "layout",
 	"description": "Section block.",
 	"keywords": [""],
+	"parent": [null],
 	"supports": {
 		"html": false,
 		"color": {
@@ -18,7 +19,13 @@
 			"link": true
 		}
 	},
-	"textdomain": "noble-performs-section",
+	"attributes": {
+		"contentSize": {
+			"type": "string",
+			"default": "regular"
+		}
+	},
+	"textdomain": "np-section",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",
