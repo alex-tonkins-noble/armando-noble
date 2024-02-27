@@ -290,6 +290,11 @@
 			"name": "footer",
 			"title": "Footer",
 			"area": "footer"
+		},
+		{
+			"name": "main",
+			"title": "Main",
+			"area": "general"
 		}
 	],
 	"customTemplates": [

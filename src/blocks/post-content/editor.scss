@@ -1,0 +1,14 @@
+.wp-block-np-post-content {
+    padding: 30px;
+    background-color: #ececec;
+
+    > * {
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
