@@ -23,6 +23,18 @@
 		"contentSize": {
 			"type": "string",
 			"default": "regular"
+		},
+		"addSectionTitle": {
+			"type": "boolean",
+			"default": false
+		},
+		"sectionTitleContent": {
+			"type": "string",
+			"default": ""
+		},
+		"sectionTitleHtmlTag": {
+			"type": "string",
+			"default": "h2"
 		}
 	},
 	"textdomain": "np-section",
