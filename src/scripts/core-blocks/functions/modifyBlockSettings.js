@@ -19,10 +19,6 @@ export function modifyBlockSettings(
 	const borderSupport = supports?.__experimentalBorder;
 	const alignSupport = supports?.align;
 
-	if (blocksToModify.includes("core/group")) {
-		console.log(settings);
-	}
-
 	if (disableTypography && typographySupport) {
 		settings.supports.typography = {
 			fontSize: false,

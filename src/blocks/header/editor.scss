@@ -1,9 +1,9 @@
 header.wp-block-template-part {
     &:has(.wp-block-np-header) {
-        
+        background-color: orange;
     }
 }
 
 .wp-block-np-header {
-	
+	background-color: lightblue;
 }

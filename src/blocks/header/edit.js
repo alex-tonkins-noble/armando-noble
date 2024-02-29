@@ -5,7 +5,8 @@ import { useBlockProps, useInnerBlocksProps } from "@wordpress/block-editor";
 export default function Edit() {
 	// Define the inner block props
 	const innerBlocksPropsExtras = {
-		orientation: "vertical",
+		allowedBlocks: ["np/header-logo"],
+		orientation: "horizontal",
 	};
 
 	// Add any additional props to the top-level Block Props here.

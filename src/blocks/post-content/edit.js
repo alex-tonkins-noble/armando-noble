@@ -1,16 +1,9 @@
 import "./editor.scss";
 import { __ } from "@wordpress/i18n";
 import { useBlockProps } from "@wordpress/block-editor";
-import { useSelect } from "@wordpress/data";
 
 export default function Edit() {
 	const additionalWrapperProps = {};
-
-	const { content } = useSelect((select) => {
-		return {
-			content: select("core/editor").getEditedPostContent(),
-		};
-	}, []);
 
 	return (
 		<div {...useBlockProps(additionalWrapperProps)}>
